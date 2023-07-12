@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/realtimeproducts.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1>Real-Time-Products</h1>
+    <form id="createProductForm">
+        <input type="text" id="titleInput" placeholder="Title" required>
+        <input type="text" id="descriptionInput" placeholder="Description" required>
+        <button type="submit">Create Product</button>
+    </form>
+</div>
+{{!-- access to node modules --}}
+<script src="/socket.io/socket.io.js"></script>
+<script src="/public/realtimeproducts.js"></script> 
+</body>
+</html>
+
+
