@@ -7,17 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div class="cart-box">
     <h1>Real-Time-Products</h1>
-    <form id="createProductForm">
+    <form class="products-box" id="createProductForm">
         <input type="text" id="titleInput" placeholder="Title" required>
         <input type="text" id="descriptionInput" placeholder="Description" required>
         <button type="submit">Create Product</button>
     </form>
+    <ul id="productList"></ul>
 </div>
 {{!-- access to node modules --}}
 <script src="/socket.io/socket.io.js"></script>
-<script src="/public/realtimeproducts.js"></script> 
+<script src="/js/realtimeproducts.js"></script> 
 </body>
 </html>
 

@@ -1,3 +1,94 @@
-h1{
-    color: red;
+html {
+    height: 100%;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+
+.cart-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.cart-box h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.cart-box .products-box {
+    position: relative;
+}
+
+.cart-box .products-box {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.cart-box .products-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+#createProductForm button[type="submit"] {
+background-color: #7e01fb;
+border: none;
+color: white;
+padding: 10px 22px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px; 
+cursor: pointer;  
+}
+
+ul#productList{
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+}
+
+.deleteButton{
+    float: right;
+    margin-right: 65px;
+    background-color: #7e01fb;
+    border: none;
+    color:#fff;
+    cursor:pointer;
+}
+
+.deleteButton:hover{
+    background: #f44f03;
+    color: #fff;
+    border: 10px;
+}
+
+
+

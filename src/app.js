@@ -46,7 +46,17 @@ io.on('connection', socket =>{
         products.push(product);
 
         io.emit('productList', products);
-    });   
+    });
+    
+    socket.on('deleteProduct', index =>{
+        console.log('Deleting product with ID:', index);
+
+        //REMOVE THE PRODUCT FROM THE ARRAY
+        if (index >= 0 && index < products.length) {
+            products.splice(index, 1);
+            io.emit ('productList', products);
+        }
+    });
 });
 
 
